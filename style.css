@@ -98,23 +98,20 @@ html{
 .nav-mobile
 { 
   display: flex;
-  align-items: center;
+  align-items: center;         /* vertikalno centriranje */
   justify-content: space-between;
   position: relative;
   width: 100%;
-  min-height: 80px;
+  height: 80px;
 }
 
 .nav-mobile .navbar-brand {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
+  position: static;            /* maknuto absolute */
+  margin: 0 auto;
 }
 
 .nav-mobile .navbar-brand img {
-  max-height: 60px; /* prilagodi ako treba */
+  max-height: 60px;
   width: auto;
   display: block;
 }
@@ -127,10 +124,10 @@ html{
 }
 
 .mobile-icons img {
-  width: 70px;
-  height: 70px;
+  max-height: 70px;   /* možeš 70–75 */
+  height: auto;
+  width: auto;
   object-fit: contain;
-  display: block;
 }
 
 html, body {
