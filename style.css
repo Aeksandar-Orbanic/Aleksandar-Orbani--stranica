@@ -318,14 +318,14 @@ html{
 {
     font-family: var(--font-heading);
     color: var(--boja);
-    padding-left: 150px;
+    
 }
 
 .recept-text
 {
-    padding-left: 20px;
+    
     font-family: var(--font-text);
-    padding-left: 300px;
+    
 }
 
 .footer
