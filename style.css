@@ -136,7 +136,7 @@ html{
 
 #mobileNav{
     width: max-content; 
-    max-width: 90vw;    
+    max-width: 100vw;    
     background-color: #faf7f2;
     overflow: hidden;
     padding-bottom: 0;
