@@ -111,8 +111,6 @@ html{
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-right: -90px;
-  margin-left: -10px;
 }
 
 .mobile-icons img {
@@ -144,16 +142,6 @@ html{
     
 }
 
-@media (max-width: 991.98px) {
-  .nav-left, .nav-right {
-    margin: 0 !important;
-    padding: 0.5rem 0.75rem !important;
-  }
-
-  .mobile-icons {
-    margin: 0 !important;
-  }
-}
 
 .nav-link{
   color: var(--boja);
