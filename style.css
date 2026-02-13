@@ -99,24 +99,28 @@ html{
 { 
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
   position: relative;
+  width: 100%;
     
 }
 
+.nav-mobile .navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .mobile-icons {
-   display: flex;
+  margin-left: auto;
+  display: flex;
   align-items: center;
   gap: 12px;
-  margin: 0;
 }
 
 .mobile-icons img {
-  width: 34px;            /* malo manje da stane sigurno */
+  width: 34px;
   height: 34px;
   object-fit: contain;
-  display: block;
 }
 
 html, body {
