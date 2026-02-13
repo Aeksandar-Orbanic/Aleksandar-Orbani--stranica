@@ -124,7 +124,7 @@ html{
 }
 
 .mobile-icons img {
-  max-height: 70px;   /* možeš 70–75 */
+  max-height: 50px;   
   height: auto;
   width: auto;
   object-fit: contain;
