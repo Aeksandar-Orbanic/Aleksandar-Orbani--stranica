@@ -204,19 +204,11 @@ html, body {
     background-position: right bottom;
   }
 
-  /* prirodna visina bez zraka */
-  .container-hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   /* manji box */
   .hero-box {
     max-width: 70%;
-    padding: 16px;
-    margin: 0 auto;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
   /* manji tekst */
@@ -257,6 +249,7 @@ html, body {
 .hero-text {
   max-width: 600px;
   margin-bottom: 20px;
+  font-family: var(--font-text);
 }
 
 .text-color 
