@@ -196,24 +196,25 @@ html, body {
 
 @media (max-width: 991.98px) {
 
-  /* pokaži desnu polovicu slike bez razduživanja */
+  /* prikaži desnu polovicu slike */
   .hero {
     background-size: 200% auto;
     background-position: right center;
     background-repeat: no-repeat;
   }
 
-  /* samo centriramo sadržaj vertikalno */
+  /* prirodna visina bez zraka */
   .container-hero {
-    height: 700px;
+    height: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
-  /* manji hero box */
+  /* manji box */
   .hero-box {
-    max-width: 60%;
-    padding: 18px;
+    max-width: 75%;
+    padding: 16px;
     margin: 0 auto;
     text-align: center;
   }
