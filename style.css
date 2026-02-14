@@ -198,11 +198,12 @@ html, body {
 
   /* prikaži desnu polovicu slike */
   .hero {
-    background-size: 200% auto;
-    background-position: right center;
+    background-size: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-position: right bottom;
   }
+
 
   /* manji box */
   .hero-box {
