@@ -198,7 +198,7 @@ html, body {
 
   /* prikaži desnu polovicu slike */
   .hero {
-    background-size: 200% auto;
+    background-size: 200% 100%;
     background-position: right center;
     background-repeat: no-repeat;
   }
