@@ -196,39 +196,37 @@ html, body {
 
 @media (max-width: 991.98px) {
 
+  /* pokaži desnu polovicu slike bez razduživanja */
   .hero {
     background-size: 200% auto;
     background-position: right center;
     background-repeat: no-repeat;
   }
 
+  /* samo centriramo sadržaj vertikalno */
   .container-hero {
-    height: 520px;              /* dovoljno za tekst + button */
+    height: 700px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0;
   }
 
-  .container-hero .hero-box {
-    margin: 0 !important;
-    max-width: 80%;
-    padding: 18px 16px;         /* dovoljno prostora i za button */
+  /* manji hero box */
+  .hero-box {
+    max-width: 60%;
+    padding: 18px;
+    margin: 0 auto;
+    text-align: center;
   }
 
+  /* manji tekst */
   .hero-title {
     font-size: 28px;
-    line-height: 1.1;
   }
 
   .hero-text {
-    font-size: 15px;
+    font-size: 16px;
   }
 
-  .hero-box .btn {
-    font-size: 16px;
-    padding: 8px 20px;
-  }
 }
 
 .container-hero .hero-box
