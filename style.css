@@ -95,6 +95,28 @@ html{
     font-size: 23px;
 } 
 
+nav-desktop {
+  position: relative;
+}
+
+.nav-desktop {
+  position: relative;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-icons img 
+{ 
+  width: 50px; 
+  height: 50px; 
+  object-fit: contain; 
+  display: block; 
+}
+
 .nav-mobile {
   display: flex;
   align-items: center;
@@ -202,6 +224,7 @@ html, body {
     background-position: right;
     background-repeat: no-repeat;
     background-position: right bottom;
+    height: 80vh
   }
 
 
@@ -215,11 +238,10 @@ html, body {
   /* manji tekst */
   .hero-title {
     font-size: 28px;
+    padding-bottom: 20px;
   }
 
-  .hero-text {
-    font-size: 16px;
-  }
+  
 
 }
 
@@ -604,27 +626,7 @@ html, body {
     font-family: var(--font-heading);
 }
 
-nav-desktop {
-  position: relative;
-}
 
-.nav-desktop {
-  position: relative;
-}
-
-.nav-icons {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.nav-icons img 
-{ 
-  width: 50px; 
-  height: 50px; 
-  object-fit: contain; 
-  display: block; 
-}
 
 
 
