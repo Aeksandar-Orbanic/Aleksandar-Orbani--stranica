@@ -104,7 +104,7 @@ html{
   flex-wrap: nowrap;
 }
 
-/* Logo uvijek točno u sredini ekrana */
+
 .nav-mobile .navbar-brand {
   position: absolute;
   left: 50%;
@@ -114,12 +114,12 @@ html{
 }
 
 .nav-mobile .navbar-brand img {
-  height: 60px;      /* logo */
+  height: 60px;     
   width: auto;
   display: block;
 }
 
-/* Ikone skroz desno */
+
 .mobile-icons {
   margin-left: auto;
   display: flex;
@@ -128,7 +128,7 @@ html{
 }
 
 .mobile-icons img {
-  height: 48px;      /* ikone malo manje od loga */
+  height: 48px;      
   width: auto;
   object-fit: contain;
   display: block;
@@ -180,8 +180,8 @@ html, body {
 .hero {
   background-image: url("./images/Hero.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
+  background-size: contain;   /* prikazuje cijelu sliku */
+  background-position: center center;
   
 }
 
@@ -189,8 +189,8 @@ html, body {
 .container-hero
 {
     
-    height: 700px;
-    overflow: hidden;
+  height: auto;        /* uklanja rezanje */
+  overflow: visible;
     
 }
 
