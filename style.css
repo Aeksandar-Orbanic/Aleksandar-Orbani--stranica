@@ -198,29 +198,30 @@ html, body {
 
   /* prikaži samo desnu polovicu slike */
   .hero {
-    background-size: 200% 100%;   /* slika 2x šira */
-    background-position: right center; /* uzmi desnu polovicu */
+    background-size: 200% auto;      /* duplo šira, ali zadrži proporcije */
+    background-position: right center;
     background-repeat: no-repeat;
   }
 
+  /* NE diramo height – ostaje 700px */
   .container-hero {
-    height: 100vh;
+    height: 500px;   /* malo manja visina, ali bez razduživanja */
   }
 
-  /* smanji box */
+  /* još manji hero box */
   .hero-box {
-    max-width: 85%;
-    padding: 20px;
-    margin: 40px auto 0;
+    max-width: 75%;
+    padding: 15px;
+    margin: 30px auto 0;
   }
 
-  /* manji tekst */
+  /* još manji tekst */
   .hero-title {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .hero-text {
-    font-size: 16px;
+    font-size: 15px;
   }
 
 }
