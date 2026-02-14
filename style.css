@@ -198,14 +198,14 @@ html, body {
 
   /* prikaži desnu polovicu slike */
   .hero {
-    background-size: 200% 100%;
+    background-size: 200% auto;
     background-position: right center;
     background-repeat: no-repeat;
+    background-position: right bottom;
   }
 
   /* prirodna visina bez zraka */
   .container-hero {
-    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,7 +213,7 @@ html, body {
 
   /* manji box */
   .hero-box {
-    max-width: 75%;
+    max-width: 70%;
     padding: 16px;
     margin: 0 auto;
     text-align: center;
