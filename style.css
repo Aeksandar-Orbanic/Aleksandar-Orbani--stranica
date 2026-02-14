@@ -180,8 +180,8 @@ html, body {
 .hero {
   background-image: url("./images/Hero.png");
   background-repeat: no-repeat;
-  background-size: contain;   /* prikazuje cijelu sliku */
-  background-position: center center;
+  background-size: cover;
+  background-position: center bottom;
   
 }
 
@@ -189,9 +189,21 @@ html, body {
 .container-hero
 {
     
-  height: auto;        /* uklanja rezanje */
-  overflow: visible;
+    height: 700px;
+    overflow: hidden;
     
+}
+
+@media (max-width: 991.98px) {
+  .hero {
+    background-size: contain;
+    background-position: center top;
+  }
+
+  .container-hero {
+    height: auto;
+    overflow: visible;
+  }
 }
 
 .container-hero .hero-box
