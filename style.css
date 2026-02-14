@@ -196,13 +196,12 @@ html, body {
 
 @media (max-width: 991.98px) {
   .hero {
-    background-size: contain;
-    background-position: center top;
+    background-size: cover;        /* ispuni prostor */
+    background-position: right center; /* pokaže desnu stranu */
   }
 
   .container-hero {
-    height: auto;
-    overflow: visible;
+    height: 100vh;   /* može i ostati 700px ako želiš */
   }
 }
 
