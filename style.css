@@ -231,17 +231,13 @@ html, body {
   /* manji box */
   .hero-box {
     display: flex;
-    max-width: 70vw;
+    padding: 10px;
     max-height: 40vh;
     align-items: center;
     justify-content: center;
   }
 
-  .hero-title
-  {
-    font-size: 20px;
-    font-family: var(--font-heading);
-  }
+  
 
   
 
