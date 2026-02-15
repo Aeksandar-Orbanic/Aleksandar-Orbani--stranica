@@ -95,10 +95,6 @@ html{
     font-size: 23px;
 } 
 
-nav-desktop {
-  position: relative;
-}
-
 .nav-desktop {
   position: relative;
 }
@@ -230,14 +226,18 @@ html, body {
 
   /* manji box */
   .hero-box {
-    display: flex;
-    padding: 10px;
+    display: inline-grid;
+    padding: 20px;
+    margin: 20px;
     max-height: 40vh;
     align-items: center;
     justify-content: center;
   }
 
-  
+  .hero-title
+  {
+    font-size: 5px;
+  }
 
   
 
@@ -325,6 +325,11 @@ html, body {
   display: block;
   overflow: hidden;
   border: 20px solid pink;
+}
+
+.ponude-card
+{
+  padding: 0 4vw ;
 }
 
 .ponude-card .card-link img {
@@ -599,14 +604,19 @@ html, body {
   height: auto;
 }
 
-.product-text{
-  padding: 20px;
+.product-text h1, h2, h3, h4{
+
   text-align: center;
   font-family: var(--font-text);
-  font-size: 18px;
+  
+  font-size: 20px;  
+}
 
-  max-width: 400px; 
-  margin: 0 auto;    
+.tekst-opis
+{
+  text-align: center;
+  font-family: var(--font-text);
+  font-size: 10px;
 }
 
 .val-text
