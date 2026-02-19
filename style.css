@@ -5,15 +5,10 @@
     --boja: #ea7cd7;
 } 
 
-h1, h2, h3, h4, h5 
-{ 
-    font-family: var(--font-heading) 
-} 
-
 body 
 { 
     font-family: var(--font-text); 
-    font-size: 1.65rem; 
+    font-size: 1.5rem; 
     overflow-x: hidden; 
 } 
 
@@ -27,7 +22,7 @@ html{
     border-radius: 5px; 
 }
 
-.border-pink img
+.border-pink img, video
 { 
     border: 10px solid pink;
     border-radius: 5px;
@@ -212,41 +207,7 @@ html, body {
     
 }
 
-@media (max-width: 991.98px) {
 
-  /* prikaži desnu polovicu slike */
-  .hero {
-    background-size: center;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    height: 70vh;
-  }
-
-
-  /* manji box */
-  .hero-box {
-    display: inline-grid;
-    padding: 20px;
-    margin: 20px;
-    max-height: 40vh;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .hero-title
-  {
-    font-size: 5px;
-  }
-
-  
-
-}
-
-.container-hero .hero-box
-{
-    margin-top: 100px;
-}
 
 .hero-box {
   background: rgba(255, 182, 193, 0.7);
@@ -255,20 +216,19 @@ html, body {
   max-width: 760px;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-top: 100px;
   
 }
 
 .hero-title 
 {
  font-family: var(--font-heading);
- font-size: 60px;
+ font-size: 3.5rem;
  color: purple;
  padding-bottom: 10px;
-  
 }
 
 .hero-text {
-  max-width: 600px;
   margin-bottom: 20px;
   font-family: var(--font-text);
 }
@@ -304,56 +264,63 @@ html, body {
   cursor: pointer;
 }
 
-.row.row-gutter {
-  --bs-gutter-x: 0.5rem !important;
-}
+
 
 .card-naslov
 {
    font-weight: 700;
    font-family: var(--font-heading);
+   font-size: 2.3rem;
 }
 
 .card-text
 {
     font-family: var(--font-text); 
-    font-size: 20px;
+    font-size: 1.3rem;
+    padding: 20px 30px;
 }
-
 
 .card-link {
   display: block;
   overflow: hidden;
-  border: 20px solid pink;
+  border: 10px solid pink;
 }
 
-.ponude-card
+.proizvod-text h1, h2, h3, h4
 {
-  padding: 0 4vw ;
+  font-family: var(--font-text);
+  font-size: 1.8rem;
+  padding-top: 5px;
+  font-weight: 700;
+  text-align: center;
 }
 
-.ponude-card .card-link img {
+.card-link img {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  display: block;
-  transition: transform .4s ease;
 }
 
 .card-link:hover img {
-  transform: scale(1.12);
+  transition: transform .4s ease;
+  transform: scale(1.15);
 }
 
 .Ponuda {
   width: 100%;
-  padding: 6vh 0;
+  padding: 5vh 0;
+}
+
+.ponuda-text h3
+{
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  padding-top: 10px;
 }
 
 
 .Proizvodi
 {
    width: 100%;
-   padding: 6vh 0;
+   padding: 4vh 0;
    background-color: pink;
 }
 
@@ -366,24 +333,21 @@ html, body {
 .card-link-1 {
   display: block;
   overflow: hidden;
-  border: 20px solid var(--bs-success-bg-subtle);
+  border: 10px solid var(--bs-success-bg-subtle);
 }
 
-.special-card-1 .card-link-1 img {
+.card-link-1 img {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  display: block;
-  transition: transform .4s ease;
 }
 
 .card-link-1:hover img {
-  transform: scale(1.12);
+  transition: transform .4s ease;
+  transform: scale(1.15);
 }
 
 .sastojci
 {
-    font-size: 18px;
+    font-size: 1rem;
     font-family: var(--font-text);
 }
 
@@ -391,6 +355,8 @@ html, body {
 {
     font-family: var(--font-heading);
     color: var(--boja);
+    font-size: 2.5rem;
+    padding-top: 10px;
     
 }
 
@@ -398,7 +364,14 @@ html, body {
 {
     
     font-family: var(--font-text);
-    
+    font-size: 1.7rem;
+}
+
+.tortice-krema h4
+{
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  padding-top: 30px;
 }
 
 .footer
@@ -436,12 +409,26 @@ html, body {
 .newsletter-form{
   display: flex;
   justify-content: center;
-  margin-top: 16px;
+  font-family: var(--font-text);
+
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+ 
+}
+
+.newsletter-text
+{
   font-family: var(--font-heading);
+  font-size: 3rem;
+  padding-bottom: 20px;
 }
 
 .newsletter-form input{
-  padding: 12px 18px;
+
+  flex: 1;      
+  min-width: 0;
+  padding: 10px 20px;
   border: 2px solid black;
   border-right: none;
   border-radius: 12px 0 0 12px;
@@ -453,23 +440,18 @@ html, body {
   border: 2px solid black;
   border-left: none;
   background: white;
-  font-size: 18px;
+  font-size: 1.5rem;
   cursor: pointer;
   border-radius: 0 12px 12px 0;
 }
 
 .video-promo
 {
-    height: 500px;
+    height: 60vh;
     object-fit: cover;
 }
 
-.card .video-promo
-{
-    border: 10px solid pink;
-}
-
-.Kat 
+.valentinovo 
 {
     background-color: pink;
     font-family: var(--font-heading);
@@ -477,8 +459,10 @@ html, body {
 
 .text-opis
 {
-    font-size: 20px;
-    padding-bottom: 10px;
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+    max-width: 90%;
+    margin: 10px auto;
     font-family: var(--font-text);
 }
 
@@ -486,11 +470,18 @@ html, body {
 {
     color: purple;
     font-family: var(--font-heading);
-    padding: 20px 0;   
+    padding: 25px 0;   
+}
+
+.kontakt-naslov
+{
+    color: purple;
+    font-family: var(--font-heading);
+    padding-bottom: 60px; 
 }
 
 .kontakt-box{
-  min-height: 100vh;
+  min-height:100%;
 }
 
 .kontakt-box a{
@@ -499,8 +490,7 @@ html, body {
 }
 
 .kontakt-box iframe{
-  width: 100%;
-  max-width: 100%;
+  width: 700px;
   height: 450px;
   border: 10px solid var(--boja);
   display: block;
@@ -524,13 +514,19 @@ html, body {
 .Vlasnik-ime
 {
     color: purple;
-    padding-bottom: 10px;
+    padding: 10px 0;
+    font-family: var(--font-heading);
+}
+
+.posao
+{
+  font-size: 1.2rem;
 }
 
 .Vlasnik-opis
 {
     font-family: var(--font-text);
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .logo
@@ -544,16 +540,6 @@ html, body {
     height: 320px;
 }
 
-.card ul li{
-  margin-bottom: 10px;
-  font-family: var(--font-text);
-}
-
-.card ul li a{
-  text-decoration: none;
-  color: black;
-}
-
 
 .slika
 {
@@ -563,67 +549,54 @@ html, body {
 
 .slika img
 {
-    width: 400px;
+    width: 500px;
     height: auto;
-    border: 10px solid pink;
-}
-
-.slika-2
-{
-    display:flex;
-    justify-content: center;
-}
-
-.slika-2 img
-{
-    width: 400px;
-    height: auto;
-    border: 10px solid purple;
 }
 
 .naslov-kat
 {
     color: purple;
-    padding-bottom: 10px;
+    font-family: var(--font-heading);
 }
 
-.proizvod-card{
-  background: white;
-  border-radius: 16px;
-  overflow: hidden;
-}
+
 
 .slika-proizvod{
   display: flex;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 .slika-proizvod img{
-  max-width: 300px;
+  max-width: 400px;
   width: 100%;
   height: auto;
 }
 
-.product-text h1, h2, h3, h4{
-
-  text-align: center;
-  font-family: var(--font-text);
-  
-  font-size: 20px;  
-}
-
-.tekst-opis
+.tekst-opis 
 {
   text-align: center;
   font-family: var(--font-text);
-  font-size: 10px;
+  font-size: 1.3rem;
+  max-width: 90%;
+  margin: 0 auto;
+  
 }
 
-.val-text
+.tekst-cijena
+{
+  text-align: center;
+  font-family: var(--font-text);
+  font-size: 1.3rem;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.kategorija-text
 {
     font-family: var(--font-text);
-    font-size: 18px;
-    max-width: 800px; 
+    font-size: 1.5rem;
+    max-width: 80%; 
     margin: 0 auto;
     padding-bottom: 10px;
 }
@@ -632,6 +605,124 @@ html, body {
 {
     background-color: var(--bs-success-bg-subtle);
     font-family: var(--font-heading);
+}
+
+.onama 
+{
+  background-color: #faf7f2;
+  font-family: var(--font-heading);
+}
+
+@media (max-width: 992px) {
+
+  .hero {
+    background-size: center;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 60vh;
+  }
+
+
+  .hero-box {
+    display: inline-grid;
+    padding: 20px;
+    max-height: 40vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-title
+  {
+    font-size: 2.8rem;
+  }
+
+  .proizvod-text h1, h2, h3, h4
+  {
+    font-size: 1.8rem;
+  }
+
+  .ponuda-text h3
+  {
+    font-size: 1rem;
+  }
+
+  .card-text
+{
+    font-size: 1.2rem;
+}
+
+  .newsletter-text
+  {
+    font-size: 2rem;
+  }
+
+  .slika img
+  {
+    width: 300px;
+  }
+
+  .slika-2 img
+  {
+    width: 300px;
+  }
+
+  .slika-proizvod img
+  {
+    max-width: 300px;
+  }
+
+  .tekst-opis
+  {
+    font-size: 1rem;
+  }
+
+  .tekst-cijena
+  {
+    font-size: 1.1rem;
+  }
+
+  .kategorija-text
+  {
+    font-size: 0.8rem;
+  }
+
+  .kontakt-naslov
+  {
+    padding-bottom: 30px; 
+  }
+
+  .kontakt-box iframe
+  {
+    width: 100%;
+    height: 350px;
+  }
+
+  .video-promo
+  {
+    height: 40vh;
+  }
+
+  .Vlasnik-ime
+  {
+    font-size: 2rem;
+  }
+
+  .posao
+  {
+    font-size: 1rem;
+  }
+
+  .Vlasnik-opis
+  {
+    font-size: 1rem;
+  }
+  
+  .logo img 
+  {
+    height: 250px;
+  }
+
 }
 
 
